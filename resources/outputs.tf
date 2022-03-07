@@ -27,3 +27,13 @@ output "igw_id" {
 output "public_route_table_id" {
   value = aws_route_table.my_public_route_table.id
 }
+
+#public ec2 instance id
+output "public_ec2_instance_id" {
+  value = aws_instance.my_private_ec2.id
+}
+
+#private ec2 instance id
+output "private_ec2_instance_id" {
+  value = aws_instance.my_private_ec2.id
+}

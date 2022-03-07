@@ -1,9 +1,9 @@
 terraform {
 
   backend "s3" {
-    bucket  = "terraform-923147149783"
+    bucket  = "okletscreateabucket"
     key     = "terraform-state/resources"
-    region  = "ap-southeast-2"
+    region  = "us-east-1"
     encrypt = true
   }
 

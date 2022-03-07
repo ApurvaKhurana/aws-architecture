@@ -62,6 +62,8 @@ terraform apply
 | availability_zone | The ce_subnets | `string` | `ap-southeast-2a` | yes |
 | public_subnet_cidr | The name of the job definitions | `string` | `10.0.1.0/24` | yes |
 | private_subnet_cidr | Name of the service/pipeline | `string` | `10.0.2.0/24` | yes |
+| key_name | key-pair to be assosiated with ec2 | `string` | n/a | no |
+| instance_type | instance type for ec2 | `string` | "t2.micro" | yes |
 
 
 ## Outputs
@@ -73,10 +75,13 @@ terraform apply
 | igw_id | ID of internet gateway assosiated with VPC |
 | public_route_table_id | ID of public route table with a route to IGW |
 | private_route_table_id | ID of private route table |
+| public_ec2_instance_id | ID of public ec2 instance |
+| private_ec2_instance_id | ID of private ec2 instance |
+
 
 ## Planned work/ TODOs :
  - [x] Separate Variables. 
- - [ ] Add more resources. 
+ - [ ] Add security froups for ec2 resources. 
 
 
 ## Author
