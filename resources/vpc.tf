@@ -16,7 +16,7 @@ resource "aws_subnet" "my_public_subnet" {
   cidr_block        = var.public_subnet_cidr
   availability_zone = var.availability_zone
 
-  # enable public ip addresses in public subnet
+  # enable public ip addresses in public subne
   map_public_ip_on_launch = true
 
   tags = {
