@@ -1,5 +1,5 @@
-# AWS Architecture - Setting up primary initial AWS network in a new AWS Account.
-IaC setup for AWS VPC and related Network setup in AWS written in terraform.
+# AWS Architecture - Setting up primary initial network in a new AWS Account.
+IaC setup for AWS VPC and related Network in AWS written in Terraform.
 
 <img src="https://logodix.com/logo/1686050.png" height="32" width="32"> ![terraform version](https://img.shields.io/badge/terraform-v1.1.17-purple)
 
